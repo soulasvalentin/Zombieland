@@ -1,0 +1,697 @@
+# depslib dependency file v1.0
+1437859481 source:c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\main.cpp
+	<iostream>
+	<allegro5/allegro.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<stdio.h>
+	<cmath>
+	"src/Globals.h"
+	"src/CError.h"
+	"src/CAllegro.h"
+	"src/CCollision.h"
+	"src/CGameState.h"
+	"src/CButton.h"
+	"src/CProgram.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\allegro.h
+	"allegro5/base.h"
+	"allegro5/altime.h"
+	"allegro5/bitmap.h"
+	"allegro5/bitmap_draw.h"
+	"allegro5/bitmap_io.h"
+	"allegro5/bitmap_lock.h"
+	"allegro5/blender.h"
+	"allegro5/color.h"
+	"allegro5/config.h"
+	"allegro5/debug.h"
+	"allegro5/display.h"
+	"allegro5/drawing.h"
+	"allegro5/error.h"
+	"allegro5/events.h"
+	"allegro5/file.h"
+	"allegro5/fixed.h"
+	"allegro5/fmaths.h"
+	"allegro5/fshook.h"
+	"allegro5/fullscreen_mode.h"
+	"allegro5/joystick.h"
+	"allegro5/keyboard.h"
+	"allegro5/memory.h"
+	"allegro5/monitor.h"
+	"allegro5/mouse.h"
+	"allegro5/mouse_cursor.h"
+	"allegro5/path.h"
+	"allegro5/system.h"
+	"allegro5/threads.h"
+	"allegro5/timer.h"
+	"allegro5/tls.h"
+	"allegro5/transformations.h"
+	"allegro5/utf8.h"
+	"allegro5/alcompat.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\base.h
+	<errno.h>
+	<limits.h>
+	<limits.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<sys/types.h>
+	<fortify/fortify.h>
+	<dmalloc.h>
+	"allegro5/internal/alconfig.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\internal\alconfig.h
+	"allegro5/platform/alplatf.h"
+	"allegro5/platform/alwatcom.h"
+	"allegro5/platform/almngw32.h"
+	"allegro5/platform/albcc32.h"
+	"allegro5/platform/almsvc.h"
+	"allegro5/platform/aliphonecfg.h"
+	"allegro5/platform/alosxcfg.h"
+	"allegro5/platform/alucfg.h"
+	"allegro5/platform/astdint.h"
+	"allegro5/platform/astdbool.h"
+
+1372629528 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\alplatf.h
+
+1434045530 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\alwatcom.h
+	<io.h>
+	<i86.h>
+	<conio.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1368969907 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\almngw32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+	"allegro5/platform/alplatf.h"
+
+1368969907 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\albcc32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1434045530 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\almsvc.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+	"allegro5/platform/alplatf.h"
+
+1434045530 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\aliphonecfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1368969907 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\alosxcfg.h
+	"allegro5/platform/alplatf.h"
+
+1368969907 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\alucfg.h
+	<fcntl.h>
+	<unistd.h>
+	"alunix.h"
+	"allegro5/platform/alplatf.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\alunix.h
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\astdint.h
+	<inttypes.h>
+	<stdint.h>
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\platform\astdbool.h
+	<stdbool.h>
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\altime.h
+	"allegro5/base.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\bitmap.h
+	"allegro5/color.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\color.h
+	"allegro5/base.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\bitmap_draw.h
+	"allegro5/bitmap.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\bitmap_io.h
+	"allegro5/bitmap.h"
+	"allegro5/file.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\file.h
+	"allegro5/base.h"
+	"allegro5/path.h"
+	"allegro5/utf8.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\path.h
+	"allegro5/base.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\utf8.h
+	"allegro5/base.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\bitmap_lock.h
+	"allegro5/bitmap.h"
+
+1372628283 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\blender.h
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\config.h
+	"allegro5/file.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\debug.h
+	<assert.h>
+	"allegro5/base.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\display.h
+	"allegro5/bitmap.h"
+	"allegro5/color.h"
+	"allegro5/events.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\events.h
+	"allegro5/altime.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\drawing.h
+	"allegro5/color.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\error.h
+	"allegro5/base.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\fixed.h
+	"allegro5/base.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\fmaths.h
+	"allegro5/base.h"
+	"allegro5/fixed.h"
+	"allegro5/inline/fmaths.inl"
+
+1368969907 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\inline\fmaths.inl
+	"allegro5/error.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\fshook.h
+	"allegro5/base.h"
+	"allegro5/file.h"
+	"allegro5/path.h"
+	<sys/types.h>
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\fullscreen_mode.h
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\joystick.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\keyboard.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+	"allegro5/keycodes.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\keycodes.h
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\memory.h
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\monitor.h
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\mouse.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\mouse_cursor.h
+	"allegro5/base.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\system.h
+	"allegro5/config.h"
+	"allegro5/path.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\threads.h
+	"allegro5/altime.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\timer.h
+	"allegro5/base.h"
+
+1362327500 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\tls.h
+	"allegro5/base.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\transformations.h
+	"allegro5/display.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\alcompat.h
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\allegro_font.h
+	"allegro5/allegro.h"
+
+1362327499 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\allegro_ttf.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_font.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\allegro_native_dialog.h
+	"allegro5/allegro.h"
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\allegro_primitives.h
+	<allegro5/allegro.h>
+
+1362327499 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\allegro_image.h
+
+1372628331 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\allegro_audio.h
+	"allegro5/allegro.h"
+
+1362327499 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\allegro\include\allegro5\allegro_acodec.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_audio.h"
+
+1437627522 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\globals.h
+
+1437622207 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\callegro.h
+
+1435780068 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\intro_zombieland.h
+
+1435784435 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\ccollision.h
+
+1437651562 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\cgamestate.h
+
+1433993629 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\cmenu.h
+
+1438059032 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\cgame.h
+	"game/CMap.h"
+	"game/CEnemy.h"
+	"game/CInventory.h"
+	"game/CPlayer.h"
+	"game/CBullets.h"
+	"game/CLoot.h"
+	"game/CCobra.h"
+
+1437624137 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\game\cenemy.h
+	"CGameObject.h"
+
+1437613742 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\game\cgameobject.h
+
+1437621944 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\game\cinventory.h
+
+1437624668 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\game\cplayer.h
+	"CGameObject.h"
+
+1437621817 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\game\cmap.h
+
+1435841636 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\game\cbullets.h
+
+1434135609 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\chelp.h
+	"CMenu.h"
+
+1435845239 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\cmainmenu.h
+	"CMenu.h"
+
+1437621030 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\cpregame.h
+	"CMenu.h"
+
+1435803956 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\cingamemenu.h
+	"CMenu.h"
+
+1434637791 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\cgameover.h
+	"CMenu.h"
+
+1437620233 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\cstore.h
+	"CMenu.h"
+
+1437650730 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\cprogram.h
+	"states/CGame.h"
+	"states/CHelp.h"
+	"states/CMainMenu.h"
+	"states/CPreGame.h"
+	"states/CIngameMenu.h"
+	"states/CGameover.h"
+	"states/CStore.h"
+	"states/CLoadGame.h"
+	"states/COptions.h"
+
+1437651440 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\cmenu.h
+
+1435841081 source:c:\users\backup_labs\desktop\zombieland_v4\main.cpp
+	<iostream>
+	<allegro5/allegro.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<stdio.h>
+	<cmath>
+	"src/Globals.h"
+	"src/CAllegro.h"
+	"src/CCollision.h"
+	"src/CGameState.h"
+	"src/CProgram.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\allegro.h
+	"allegro5/base.h"
+	"allegro5/altime.h"
+	"allegro5/bitmap.h"
+	"allegro5/bitmap_draw.h"
+	"allegro5/bitmap_io.h"
+	"allegro5/bitmap_lock.h"
+	"allegro5/blender.h"
+	"allegro5/color.h"
+	"allegro5/config.h"
+	"allegro5/debug.h"
+	"allegro5/display.h"
+	"allegro5/drawing.h"
+	"allegro5/error.h"
+	"allegro5/events.h"
+	"allegro5/file.h"
+	"allegro5/fixed.h"
+	"allegro5/fmaths.h"
+	"allegro5/fshook.h"
+	"allegro5/fullscreen_mode.h"
+	"allegro5/joystick.h"
+	"allegro5/keyboard.h"
+	"allegro5/memory.h"
+	"allegro5/monitor.h"
+	"allegro5/mouse.h"
+	"allegro5/mouse_cursor.h"
+	"allegro5/path.h"
+	"allegro5/system.h"
+	"allegro5/threads.h"
+	"allegro5/timer.h"
+	"allegro5/tls.h"
+	"allegro5/transformations.h"
+	"allegro5/utf8.h"
+	"allegro5/alcompat.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\base.h
+	<errno.h>
+	<limits.h>
+	<limits.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<sys/types.h>
+	<fortify/fortify.h>
+	<dmalloc.h>
+	"allegro5/internal/alconfig.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\internal\alconfig.h
+	"allegro5/platform/alplatf.h"
+	"allegro5/platform/alwatcom.h"
+	"allegro5/platform/almngw32.h"
+	"allegro5/platform/albcc32.h"
+	"allegro5/platform/almsvc.h"
+	"allegro5/platform/aliphonecfg.h"
+	"allegro5/platform/alosxcfg.h"
+	"allegro5/platform/alucfg.h"
+	"allegro5/platform/astdint.h"
+	"allegro5/platform/astdbool.h"
+
+1372629528 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\alplatf.h
+
+1434045530 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\alwatcom.h
+	<io.h>
+	<i86.h>
+	<conio.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1368969907 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\almngw32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+	"allegro5/platform/alplatf.h"
+
+1368969907 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\albcc32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1434045530 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\almsvc.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+	"allegro5/platform/alplatf.h"
+
+1434045530 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\aliphonecfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1368969907 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\alosxcfg.h
+	"allegro5/platform/alplatf.h"
+
+1368969907 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\alucfg.h
+	<fcntl.h>
+	<unistd.h>
+	"alunix.h"
+	"allegro5/platform/alplatf.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\alunix.h
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\astdint.h
+	<inttypes.h>
+	<stdint.h>
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\platform\astdbool.h
+	<stdbool.h>
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\altime.h
+	"allegro5/base.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\bitmap.h
+	"allegro5/color.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\color.h
+	"allegro5/base.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\bitmap_draw.h
+	"allegro5/bitmap.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\bitmap_io.h
+	"allegro5/bitmap.h"
+	"allegro5/file.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\file.h
+	"allegro5/base.h"
+	"allegro5/path.h"
+	"allegro5/utf8.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\path.h
+	"allegro5/base.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\utf8.h
+	"allegro5/base.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\bitmap_lock.h
+	"allegro5/bitmap.h"
+
+1372628283 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\blender.h
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\config.h
+	"allegro5/file.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\debug.h
+	<assert.h>
+	"allegro5/base.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\display.h
+	"allegro5/bitmap.h"
+	"allegro5/color.h"
+	"allegro5/events.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\events.h
+	"allegro5/altime.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\drawing.h
+	"allegro5/color.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\error.h
+	"allegro5/base.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\fixed.h
+	"allegro5/base.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\fmaths.h
+	"allegro5/base.h"
+	"allegro5/fixed.h"
+	"allegro5/inline/fmaths.inl"
+
+1368969907 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\inline\fmaths.inl
+	"allegro5/error.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\fshook.h
+	"allegro5/base.h"
+	"allegro5/file.h"
+	"allegro5/path.h"
+	<sys/types.h>
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\fullscreen_mode.h
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\joystick.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\keyboard.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+	"allegro5/keycodes.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\keycodes.h
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\memory.h
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\monitor.h
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\mouse.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\mouse_cursor.h
+	"allegro5/base.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\system.h
+	"allegro5/config.h"
+	"allegro5/path.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\threads.h
+	"allegro5/altime.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\timer.h
+	"allegro5/base.h"
+
+1362327500 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\tls.h
+	"allegro5/base.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\transformations.h
+	"allegro5/display.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\alcompat.h
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\allegro_font.h
+	"allegro5/allegro.h"
+
+1362327499 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\allegro_ttf.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_font.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\allegro_native_dialog.h
+	"allegro5/allegro.h"
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\allegro_primitives.h
+	<allegro5/allegro.h>
+
+1362327499 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\allegro_image.h
+
+1372628331 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\allegro_audio.h
+	"allegro5/allegro.h"
+
+1362327499 c:\users\backup_labs\desktop\zombieland_v4\allegro\include\allegro5\allegro_acodec.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_audio.h"
+
+1435843449 c:\users\backup_labs\desktop\zombieland_v4\src\globals.h
+
+1435838012 c:\users\backup_labs\desktop\zombieland_v4\src\callegro.h
+
+1434160379 c:\users\backup_labs\desktop\zombieland_v4\src\intro_zombieland.h
+
+1435784435 c:\users\backup_labs\desktop\zombieland_v4\src\ccollision.h
+
+1435683833 c:\users\backup_labs\desktop\zombieland_v4\src\cgamestate.h
+
+1435804044 c:\users\backup_labs\desktop\zombieland_v4\src\cprogram.h
+	"states/CGame.h"
+	"states/CHelp.h"
+	"states/CMainMenu.h"
+	"states/CPreGame.h"
+	"states/CIngameMenu.h"
+	"states/CGameover.h"
+	"states/CStore.h"
+	"states/CRanking.h"
+	"states/CLoadGame.h"
+	"states/COptions.h"
+
+1435844954 c:\users\backup_labs\desktop\zombieland_v4\src\states\cgame.h
+	"game/CMap.h"
+	"game/CEnemy.h"
+	"game/CInventory.h"
+	"game/CPlayer.h"
+	"game/CBullets.h"
+	"game/Structs.h"
+	"game/CLoot.h"
+
+1434640110 c:\users\backup_labs\desktop\zombieland_v4\src\states\cmenu.h
+
+1435789295 c:\users\backup_labs\desktop\zombieland_v4\src\states\game\cenemy.h
+	"CGameObject.h"
+
+1435765814 c:\users\backup_labs\desktop\zombieland_v4\src\states\game\cgameobject.h
+
+1435841025 c:\users\backup_labs\desktop\zombieland_v4\src\states\game\cinventory.h
+
+1435844591 c:\users\backup_labs\desktop\zombieland_v4\src\states\game\cplayer.h
+	"CGameObject.h"
+
+1435801989 c:\users\backup_labs\desktop\zombieland_v4\src\states\game\cmap.h
+
+1435841636 c:\users\backup_labs\desktop\zombieland_v4\src\states\game\cbullets.h
+
+1434135609 c:\users\backup_labs\desktop\zombieland_v4\src\states\chelp.h
+	"CMenu.h"
+
+1435845239 c:\users\backup_labs\desktop\zombieland_v4\src\states\cmainmenu.h
+	"CMenu.h"
+
+1435780390 c:\users\backup_labs\desktop\zombieland_v4\src\states\cpregame.h
+	"CMenu.h"
+
+1435803956 c:\users\backup_labs\desktop\zombieland_v4\src\states\cingamemenu.h
+	"CMenu.h"
+
+1434637791 c:\users\backup_labs\desktop\zombieland_v4\src\states\cgameover.h
+	"CMenu.h"
+
+1435841175 c:\users\backup_labs\desktop\zombieland_v4\src\states\cstore.h
+	"CMenu.h"
+
+1434637592 c:\users\backup_labs\desktop\zombieland_v4\src\states\cranking.h
+	"CMenu.h"
+
+1434637592 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\cranking.h
+	"CMenu.h"
+
+1435693505 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\game\structs.h
+
+1437650779 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\cloadgame.h
+
+1437650779 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\game\cloot.h
+	"CGameObject.h"
+
+1435804044 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\coptions.h
+
+1435693505 c:\users\backup_labs\desktop\zombieland_v4\src\states\game\structs.h
+
+1435803144 c:\users\backup_labs\desktop\zombieland_v4\src\states\game\cloot.h
+	"CGameObject.h"
+
+1435844954 c:\users\backup_labs\desktop\zombieland_v4\src\states\cloadgame.h
+
+1435804044 c:\users\backup_labs\desktop\zombieland_v4\src\states\coptions.h
+
+1436835279 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\cbutton.h
+
+1437627889 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\cerror.h
+	<fstream>
+
+1437617779 c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\src\states\game\ccobra.h
+
+1420596908 source:c:\users\valentin\google drive\utn\laboratorio ii 2015\zombieland_v4\resources.rc
+

@@ -1,0 +1,73 @@
+#ifndef INGAMEMENU_H_INCLUDED
+#define INGAMEMENU_H_INCLUDED
+
+/**
+    ************************
+    * CLASS CINGAMEMENU
+    ************************
+
+*/
+
+class CIngameMenu:public CMenu{
+
+public:
+    void open_ingamemenu();
+    void render_ingamemenu();
+
+    CIngameMenu():CMenu("CONTINUAR","TIENDA","GUARDAR","OPCIONES","AYUDA","MENU PRINCIPAL"){}
+};
+
+///*********************************************
+///*            OPEN INGAMEMENU
+///*********************************************
+
+void CIngameMenu::open_ingamemenu(){
+
+    source = INGAMEMENU;
+
+    //-------------------------------
+    //  LEER IMPUTS
+    //-------------------------------
+
+    switch(read_imput()){
+
+        case BACK:  game.changeState(PLAYING);   break;
+        case SELECT:
+
+            //---------------------------------------
+            //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
+            //---------------------------------------
+
+            switch(selection){
+                case 0: game.changeState(PLAYING);  break;
+                case 1: game.changeState(STORE);    break;
+                case 2: if(!game.getSaved())
+                        game.changeState(SAVE_GAME);break;
+                //case 3: game.changeState(OPTIONS);  break;
+                case 4: game.changeState(HELP);     break;
+                case 5: game.changeState(MAINMENU); break;
+            }
+            break;
+    }
+}
+
+///*********************************************
+///*            RENDER INGAMEMENU
+///*********************************************
+
+void CIngameMenu::render_ingamemenu(){
+
+    //-------------------------------
+    //  MOSTRAR SELECCIÓN
+    //-------------------------------
+
+    render_selection();
+
+    //-------------------------------
+    //  MOSTRAR OPCIONES
+    //-------------------------------
+
+    render_options();
+}
+
+#endif // INGAMEMENU_H_INCLUDED

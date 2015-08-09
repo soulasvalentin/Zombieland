@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Zombieland_V4" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Zombieland_V4" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="Allegro/bin" />
+					<Add directory="Allegro/include" />
+					<Add directory="Allegro/lib" />
+				</Compiler>
+				<Linker>
+					<Add library="Allegro\lib\liballegro-5.0.10-monolith-mt.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Zombieland_V4" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="icon.ico" />
+		<Unit filename="main.cpp" />
+		<Unit filename="prototipos.h" />
+		<Unit filename="resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/CAllegro.h" />
+		<Unit filename="src/CButton.h" />
+		<Unit filename="src/CCollision.h" />
+		<Unit filename="src/CError.h" />
+		<Unit filename="src/CGameState.h" />
+		<Unit filename="src/CProgram.h" />
+		<Unit filename="src/Globals.h" />
+		<Unit filename="src/states/CGame.h" />
+		<Unit filename="src/states/CGameover.h" />
+		<Unit filename="src/states/CHelp.h" />
+		<Unit filename="src/states/CIngameMenu.h" />
+		<Unit filename="src/states/CLoadGame.h" />
+		<Unit filename="src/states/CMainMenu.h" />
+		<Unit filename="src/states/CMenu.h" />
+		<Unit filename="src/states/COptions.h" />
+		<Unit filename="src/states/CPreGame.h" />
+		<Unit filename="src/states/CStore.h" />
+		<Unit filename="src/states/game/CBullets.h" />
+		<Unit filename="src/states/game/CCobra.h" />
+		<Unit filename="src/states/game/CEnemy.h" />
+		<Unit filename="src/states/game/CGameObject.h" />
+		<Unit filename="src/states/game/CInventory.h" />
+		<Unit filename="src/states/game/CLoot.h" />
+		<Unit filename="src/states/game/CMap.h" />
+		<Unit filename="src/states/game/CPlayer.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="headers\states">
+      <UniqueIdentifier>{f43fd11d-52b5-4754-8ed7-bc7e7b4792c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\states\game">
+      <UniqueIdentifier>{676b3617-8bdb-40fe-95dd-ac7c0d007ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\CAllegro.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\CButton.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\CCollision.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\CError.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\CGameState.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\CProgram.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Globals.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Intro_zombieland.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\CGame.h">
+      <Filter>headers\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\CGameover.h">
+      <Filter>headers\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\CHelp.h">
+      <Filter>headers\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\CIngameMenu.h">
+      <Filter>headers\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\CLoadGame.h">
+      <Filter>headers\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\CMainMenu.h">
+      <Filter>headers\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\CMenu.h">
+      <Filter>headers\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\COptions.h">
+      <Filter>headers\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\CPreGame.h">
+      <Filter>headers\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\CStore.h">
+      <Filter>headers\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\game\CBullets.h">
+      <Filter>headers\states\game</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\game\CCobra.h">
+      <Filter>headers\states\game</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\game\CEnemy.h">
+      <Filter>headers\states\game</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\game\CGameObject.h">
+      <Filter>headers\states\game</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\game\CInventory.h">
+      <Filter>headers\states\game</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\game\CLoot.h">
+      <Filter>headers\states\game</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\game\CMap.h">
+      <Filter>headers\states\game</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\game\CPlayer.h">
+      <Filter>headers\states\game</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

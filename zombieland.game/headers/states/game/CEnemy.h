@@ -270,7 +270,10 @@ bool load_enemies(CEnemy *vEnemies){
 
     FILE* p;
     fopen_s(&p, "files/enemies.dat", "rb");
-    if(p == NULL) {init_enemies_file(vEnemies); return false;}
+    if(p == NULL) {
+        init_enemies_file(vEnemies); 
+        return false;
+    }
 
     for(int i=0; i<MAX_ENEMIES; i++)
         fread(&vEnemies[i],sizeof (CEnemy), 1, p);

@@ -54,7 +54,7 @@ Allegro::Allegro(int W=800,int H=600){
     al_clear_to_color(al_map_rgb(20,20,20));
 
     // NOMBRE VENTANA
-    al_set_window_title(display,"Zombieland V4!");
+    al_set_window_title(display,"Zombieland");
 
     // FPS
     cont = 0;

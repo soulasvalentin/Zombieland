@@ -86,12 +86,13 @@ CGame::CGame(){
 
     FILE* p;
     fopen_s(&p, "files/savegames.dat", "rb");
-    if(p==NULL) ID = 0;
+    if(p==NULL) 
+        ID = 0;
     else{
         fseek(p,0,2);
         ID = ftell(p)/sizeof (CGame);
+        fclose(p);
     }
-    fclose(p);
 }
 
 

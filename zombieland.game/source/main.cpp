@@ -73,7 +73,7 @@ int main()
     al.load_samples();
     al.register_events();
     al_start_timer(timer);
-    imagen("../resources/menus/intro_zombieland.jpg",true);
+    imagen("resources/menus/intro_zombieland.jpg",true);
     al.load_bitmaps();
 
     srand(time(NULL));

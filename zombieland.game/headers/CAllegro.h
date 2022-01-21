@@ -86,12 +86,12 @@ void Allegro::load_fonts(){
     //  CARGAR FUENTES
     //-------------------------------
 
-    keepcalm24 = al_load_font("fonts/KeepCalm-Medium.ttf",48,0);
-    keepcalm_med = al_load_font("fonts/KeepCalm-Medium.ttf",24,0);
-    keepcalm12 = al_load_font("fonts/KeepCalm-Medium.ttf",12,0);
-    farial = al_load_font("fonts/ariAllegro.ttf",16,0);
-    dayslater36 = al_load_font("fonts/28DaysLater.ttf",48,0);
-    dayslater_big = al_load_font("fonts/28DaysLater.ttf",96,0);
+    keepcalm24 = al_load_font("resources/fonts/KeepCalm-Medium.ttf",48,0);
+    keepcalm_med = al_load_font("resources/fonts/KeepCalm-Medium.ttf",24,0);
+    keepcalm12 = al_load_font("resources/fonts/KeepCalm-Medium.ttf",12,0);
+    farial = al_load_font("resources/fonts/ariAllegro.ttf",16,0);
+    dayslater36 = al_load_font("resources/fonts/28DaysLater.ttf",48,0);
+    dayslater_big = al_load_font("resources/fonts/28DaysLater.ttf",96,0);
 }
 
 void Allegro::load_samples(){

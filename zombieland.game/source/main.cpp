@@ -22,7 +22,7 @@ using namespace std;
 
 
                 /**************************************
-               **            ZOMBIELAND V4            **
+               **             ZOMBIELAND              **
               ***       @author Valentin Soulas       ***
              ****  @contact soulasvalentin@gmail.com  ****
              ****                                     ****

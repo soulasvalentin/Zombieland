@@ -9,20 +9,22 @@
 
 */
 
-class CMainMenu:public CMenu{
+class CMainMenu : public CMenu
+{
 
 public:
     void open_mainmenu();
     void render_mainmenu();
 
-    CMainMenu():CMenu("JUGAR","OPCIONES","AYUDA","SALIR"){}
+    CMainMenu() : CMenu("JUGAR", "OPCIONES", "AYUDA", "SALIR") {}
 };
 
 ///*********************************************
 ///*             OPEN MAINMENU
 ///*********************************************
 
-void CMainMenu::open_mainmenu(){
+void CMainMenu::open_mainmenu()
+{
 
     source = MAINMENU;
 
@@ -30,34 +32,46 @@ void CMainMenu::open_mainmenu(){
     //  LEER IMPUTS
     //-------------------------------
 
-    switch(read_imput()){
+    switch (read_imput())
+    {
 
-        case BACK:  GameState.changeState(EXIT);   break;
-        case SELECT:
+    case BACK:
+        GameState.changeState(EXIT);
+        break;
+    case SELECT:
 
-            //---------------------------------------
-            //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
-            //---------------------------------------
+        //---------------------------------------
+        //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
+        //---------------------------------------
 
-            switch(selection){
-                case 0: GameState.changeState(PRE_GAME); break;
-                case 1: GameState.changeState(OPTIONS); break;
-                case 2: GameState.changeState(HELP);        break;
-                case 3: GameState.changeState(EXIT);        break;
-            }
+        switch (selection)
+        {
+        case 0:
+            GameState.changeState(PRE_GAME);
             break;
+        case 1:
+            GameState.changeState(OPTIONS);
+            break;
+        case 2:
+            GameState.changeState(HELP);
+            break;
+        case 3:
+            GameState.changeState(EXIT);
+            break;
+        }
+        break;
     }
-
 }
 
 ///*********************************************
 ///*            RENDER MAINMENU
 ///*********************************************
 
-void CMainMenu::render_mainmenu(){
+void CMainMenu::render_mainmenu()
+{
 
     //-------------------------------
-    //  MOSTRAR LA SELECCIÓN
+    //  MOSTRAR LA SELECCIï¿½N
     //-------------------------------
 
     render_selection();

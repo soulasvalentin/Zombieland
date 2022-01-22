@@ -9,20 +9,22 @@
 
 */
 
-class CIngameMenu:public CMenu{
+class CIngameMenu : public CMenu
+{
 
 public:
     void open_ingamemenu();
     void render_ingamemenu();
 
-    CIngameMenu():CMenu("CONTINUAR","TIENDA","GUARDAR","OPCIONES","AYUDA","MENU PRINCIPAL"){}
+    CIngameMenu() : CMenu("CONTINUAR", "TIENDA", "GUARDAR", "OPCIONES", "AYUDA", "MENU PRINCIPAL") {}
 };
 
 ///*********************************************
 ///*            OPEN INGAMEMENU
 ///*********************************************
 
-void CIngameMenu::open_ingamemenu(){
+void CIngameMenu::open_ingamemenu()
+{
 
     source = INGAMEMENU;
 
@@ -30,25 +32,41 @@ void CIngameMenu::open_ingamemenu(){
     //  LEER IMPUTS
     //-------------------------------
 
-    switch(read_imput()){
+    switch (read_imput())
+    {
 
-        case BACK:  GameState.changeState(PLAYING);   break;
-        case SELECT:
+    case BACK:
+        GameState.changeState(PLAYING);
+        break;
+    case SELECT:
 
-            //---------------------------------------
-            //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
-            //---------------------------------------
+        //---------------------------------------
+        //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
+        //---------------------------------------
 
-            switch(selection){
-                case 0: GameState.changeState(PLAYING);  break;
-                case 1: GameState.changeState(STORE);    break;
-                case 2: if(!GameState.getSaved())
-                        GameState.changeState(SAVE_GAME);break;
-                case 3: GameState.changeState(OPTIONS);  break;
-                case 4: GameState.changeState(HELP);     break;
-                case 5: GameState.changeState(MAINMENU); break;
-            }
+        switch (selection)
+        {
+        case 0:
+            GameState.changeState(PLAYING);
             break;
+        case 1:
+            GameState.changeState(STORE);
+            break;
+        case 2:
+            if (!GameState.getSaved())
+                GameState.changeState(SAVE_GAME);
+            break;
+        case 3:
+            GameState.changeState(OPTIONS);
+            break;
+        case 4:
+            GameState.changeState(HELP);
+            break;
+        case 5:
+            GameState.changeState(MAINMENU);
+            break;
+        }
+        break;
     }
 }
 
@@ -56,10 +74,11 @@ void CIngameMenu::open_ingamemenu(){
 ///*            RENDER INGAMEMENU
 ///*********************************************
 
-void CIngameMenu::render_ingamemenu(){
+void CIngameMenu::render_ingamemenu()
+{
 
     //-------------------------------
-    //  MOSTRAR SELECCIÓN
+    //  MOSTRAR SELECCIï¿½N
     //-------------------------------
 
     render_selection();

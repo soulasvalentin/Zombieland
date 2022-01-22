@@ -2,49 +2,59 @@
 #define GAMEOVER_H_INCLUDED
 #include "CMenu.h"
 
-
-class CGameOver:public CMenu{
+class CGameOver : public CMenu
+{
 
 public:
     void open_gameover(int);
     void render_gameover(int);
 
-    CGameOver():CMenu("VOLVER A INTENTARLO","VER RANKINGS","MENU PRINCIPAL"){}
+    CGameOver() : CMenu("VOLVER A INTENTARLO", "VER RANKINGS", "MENU PRINCIPAL") {}
 };
 
-void CGameOver::open_gameover(int score){
+void CGameOver::open_gameover(int score)
+{
 
     //-------------------------------
     //  LEER IMPUTS
     //-------------------------------
 
-    switch(read_imput()){
+    switch (read_imput())
+    {
 
-        case BACK:  GameState.changeState(MAINMENU);   break;
-        case SELECT:
+    case BACK:
+        GameState.changeState(MAINMENU);
+        break;
+    case SELECT:
 
-            //---------------------------------------
-            //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
-            //---------------------------------------
+        //---------------------------------------
+        //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
+        //---------------------------------------
 
-            switch(selection){
-                case 0: GameState.changeState(START_PLAYING);   break;
-                //case 1: GameState.changeState(RANKING);         break;
-                case 2: GameState.changeState(MAINMENU);        break;
-            }
+        switch (selection)
+        {
+        case 0:
+            GameState.changeState(START_PLAYING);
             break;
+        //case 1: GameState.changeState(RANKING);         break;
+        case 2:
+            GameState.changeState(MAINMENU);
+            break;
+        }
+        break;
     }
 }
 
-void CGameOver::render_gameover(int score){
+void CGameOver::render_gameover(int score)
+{
 
     // MOSTRAR PUNTAJE
 
-    al_draw_textf(keepcalm_med,al_map_rgb(200,200,20),ANCHO/2+camx,ALTO*0.20+camy,
-                  ALLEGRO_ALIGN_CENTER,"PUNTAJE: %i",score);
+    al_draw_textf(keepcalm_med, al_map_rgb(200, 200, 20), ANCHO / 2 + camx, ALTO * 0.20 + camy,
+                  ALLEGRO_ALIGN_CENTER, "PUNTAJE: %i", score);
 
     //-------------------------------
-    //  MOSTRAR LA SELECCIÓN
+    //  MOSTRAR LA SELECCIï¿½N
     //-------------------------------
 
     render_selection();

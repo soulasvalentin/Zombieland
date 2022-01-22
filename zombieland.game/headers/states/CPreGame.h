@@ -9,44 +9,59 @@
 
 */
 
-class CPreGame:public CMenu{
+class CPreGame : public CMenu
+{
 
 public:
     void open_pregame();
     void render_pregame();
 
-    CPreGame():CMenu("NUEVA PARTIDA","CONTINUAR","CARGAR","VOLVER"){}
+    CPreGame() : CMenu("NUEVA PARTIDA", "CONTINUAR", "CARGAR", "VOLVER") {}
 };
 
 ///*********************************************
 ///*             OPEN PREGAME
 ///*********************************************
 
-void CPreGame::open_pregame(){
+void CPreGame::open_pregame()
+{
 
     //-------------------------------
     //  LEER IMPUTS
     //-------------------------------
 
-    switch(read_imput()){
+    switch (read_imput())
+    {
 
-        case BACK:  GameState.changeState(MAINMENU);   break;
-        case SELECT:
+    case BACK:
+        GameState.changeState(MAINMENU);
+        break;
+    case SELECT:
 
-            //---------------------------------------
-            //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
-            //---------------------------------------
+        //---------------------------------------
+        //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
+        //---------------------------------------
 
-            switch(selection){
-                case 0: imagen("resources/menus/help/objetivo.png",false);
-                        imagen("resources/menus/help/help.png",false);
-                        imagen("resources/menus/help/help_tienda.png",false);
-                    GameState.changeState(START_PLAYING);              break;
-                case 1: if(GameState.getRunning())GameState.changeState(PLAYING);    break;
-                case 2: GameState.changeState(LOAD_GAME); break;
-                case 3: GameState.changeState(MAINMENU);                   break;
-            }
+        switch (selection)
+        {
+        case 0:
+            imagen("resources/menus/help/objetivo.png", false);
+            imagen("resources/menus/help/help.png", false);
+            imagen("resources/menus/help/help_tienda.png", false);
+            GameState.changeState(START_PLAYING);
             break;
+        case 1:
+            if (GameState.getRunning())
+                GameState.changeState(PLAYING);
+            break;
+        case 2:
+            GameState.changeState(LOAD_GAME);
+            break;
+        case 3:
+            GameState.changeState(MAINMENU);
+            break;
+        }
+        break;
     }
 }
 
@@ -54,10 +69,11 @@ void CPreGame::open_pregame(){
 ///*              RENDER PREGAME
 ///*********************************************
 
-void CPreGame::render_pregame(){
+void CPreGame::render_pregame()
+{
 
     //-------------------------------
-    //  MOSTRAR LA SELECCIÓN
+    //  MOSTRAR LA SELECCIï¿½N
     //-------------------------------
 
     render_selection();

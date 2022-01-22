@@ -8,34 +8,33 @@
     ************************
 
     Detalles:
-        - Clase dedicada para manejar la librería de Allegro 5
+        - Clase dedicada para manejar la librerï¿½a de Allegro 5
 */
 
-class Allegro{
+class Allegro
+{
 
-    private:
-        double new_time,old_time;
-        int cont,fps,last_fps;
+private:
+    double new_time, old_time;
+    int cont, fps, last_fps;
 
-    public:
+public:
+    Allegro(int, int);
+    void install_addons();
+    void load_fonts();
+    void load_samples();
+    void register_events();
+    void terminate_allegro();
+    void read_mouse_coords();
+    void load_bitmaps();
 
-        Allegro(int,int);
-        void install_addons();
-        void load_fonts();
-        void load_samples();
-        void register_events();
-        void terminate_allegro();
-        void read_mouse_coords();
-        void load_bitmaps();
-
-        // Mostrar Info
-        void showMousePos(int,int);
-        void showFps();
+    // Mostrar Info
+    void showMousePos(int, int);
+    void showFps();
 };
 
-
-Allegro::Allegro(int W=800,int H=600){
-
+Allegro::Allegro(int W = 800, int H = 600)
+{
 
     al_init();
 
@@ -50,21 +49,22 @@ Allegro::Allegro(int W=800,int H=600){
     //al_set_new_display_flags(ALLEGRO_NOFRAME);
 
     // CREAR DISPLAY Y LIMPIAR
-    display = al_create_display(ANCHO,ALTO);
-    al_clear_to_color(al_map_rgb(20,20,20));
+    display = al_create_display(ANCHO, ALTO);
+    al_clear_to_color(al_map_rgb(20, 20, 20));
 
     // NOMBRE VENTANA
-    al_set_window_title(display,"Zombieland");
+    al_set_window_title(display, "Zombieland");
 
     // FPS
     cont = 0;
     fps = 60;
     old_time = al_get_time();
     last_fps = 0;
-    timer = al_create_timer(1.0/FPS);
+    timer = al_create_timer(1.0 / FPS);
 }
 
-void Allegro::install_addons(){
+void Allegro::install_addons()
+{
 
     //-------------------------------
     //  INSTALAR ADDONS NECESARIOS
@@ -80,36 +80,39 @@ void Allegro::install_addons(){
     al_init_acodec_addon();
 }
 
-void Allegro::load_fonts(){
+void Allegro::load_fonts()
+{
 
     //-------------------------------
     //  CARGAR FUENTES
     //-------------------------------
 
-    keepcalm24 = al_load_font("resources/fonts/KeepCalm-Medium.ttf",48,0);
-    keepcalm_med = al_load_font("resources/fonts/KeepCalm-Medium.ttf",24,0);
-    keepcalm12 = al_load_font("resources/fonts/KeepCalm-Medium.ttf",12,0);
-    farial = al_load_font("resources/fonts/ariAllegro.ttf",16,0);
-    dayslater36 = al_load_font("resources/fonts/28DaysLater.ttf",48,0);
-    dayslater_big = al_load_font("resources/fonts/28DaysLater.ttf",96,0);
+    keepcalm24 = al_load_font("resources/fonts/KeepCalm-Medium.ttf", 48, 0);
+    keepcalm_med = al_load_font("resources/fonts/KeepCalm-Medium.ttf", 24, 0);
+    keepcalm12 = al_load_font("resources/fonts/KeepCalm-Medium.ttf", 12, 0);
+    farial = al_load_font("resources/fonts/ariAllegro.ttf", 16, 0);
+    dayslater36 = al_load_font("resources/fonts/28DaysLater.ttf", 48, 0);
+    dayslater_big = al_load_font("resources/fonts/28DaysLater.ttf", 96, 0);
 }
 
-void Allegro::load_samples(){
+void Allegro::load_samples()
+{
 
     //-------------------------------
     //  CARGAR AUDIOS
     //-------------------------------
 
     al_reserve_samples(6);
-    audios[PISTOL]      = al_load_sample("resources/sounds/snd_pistol.wav");
-    audios[SHOTGUN]     = al_load_sample("resources/sounds/snd_shotgun.wav");
-    audios[UZI]         = al_load_sample("resources/sounds/snd_uzi.wav");
-    audios[ASSAULT]     = al_load_sample("resources/sounds/snd_assault.wav");
-    audios[4]           = al_load_sample("resources/sounds/rollover1.wav");
-    audios[5]           = al_load_sample("resources/sounds/error.mp3");
+    audios[PISTOL] = al_load_sample("resources/sounds/snd_pistol.wav");
+    audios[SHOTGUN] = al_load_sample("resources/sounds/snd_shotgun.wav");
+    audios[UZI] = al_load_sample("resources/sounds/snd_uzi.wav");
+    audios[ASSAULT] = al_load_sample("resources/sounds/snd_assault.wav");
+    audios[4] = al_load_sample("resources/sounds/rollover1.wav");
+    audios[5] = al_load_sample("resources/sounds/error.mp3");
 }
 
-void Allegro::register_events(){
+void Allegro::register_events()
+{
 
     //-------------------------------
     //  REGISTRAR EVENTOS DE TIPO INPUT
@@ -123,7 +126,8 @@ void Allegro::register_events(){
     al_register_event_source(event_queue, al_get_mouse_event_source());
 }
 
-void Allegro::load_bitmaps(){
+void Allegro::load_bitmaps()
+{
 
     bmp_zombieland = al_load_bitmap("resources/menus/zombieland.png");
     bmp_menu_select = al_load_bitmap("resources/menus/menu_selection.png");
@@ -137,12 +141,12 @@ void Allegro::load_bitmaps(){
     bmp_aspa.init();
 }
 
-void Allegro::terminate_allegro(){
+void Allegro::terminate_allegro()
+{
 
     //-------------------------------
     //  DESTRUYE ELEMENTOS Y TERMINA ALLEGRO
     //-------------------------------
-
 
     al_destroy_timer(timer);
 
@@ -165,16 +169,17 @@ void Allegro::terminate_allegro(){
     bmp_cobra.destroy();
     bmp_aspa.destroy();
 
-    for(int i=0; i<6; i++)
+    for (int i = 0; i < 6; i++)
         al_destroy_sample(audios[i]);
 
     al_destroy_display(display);
 }
 
+void Allegro::read_mouse_coords()
+{
 
-void Allegro::read_mouse_coords(){
-
-    if(ev.type == ALLEGRO_EVENT_MOUSE_AXES){
+    if (ev.type == ALLEGRO_EVENT_MOUSE_AXES)
+    {
         x_mouse = ev.mouse.x;
         y_mouse = ev.mouse.y;
     }
@@ -184,62 +189,65 @@ void Allegro::read_mouse_coords(){
 ///*          MOSTRAR INFORMACION
 ///*********************************************
 
-void Allegro::showMousePos(int x, int y){
+void Allegro::showMousePos(int x, int y)
+{
 
     //-------------------------------
     //  MUESTRA LA POS DEL MOUSE
     //-------------------------------
 
-    al_draw_textf(keepcalm12,al_map_rgb(250,250,250),camx+5,camy+80,0,"mouse x: %i",x);
-    al_draw_textf(keepcalm12,al_map_rgb(250,250,250),camx+5,camy+95,0,"mouse y: %i",y);
+    al_draw_textf(keepcalm12, al_map_rgb(250, 250, 250), camx + 5, camy + 80, 0, "mouse x: %i", x);
+    al_draw_textf(keepcalm12, al_map_rgb(250, 250, 250), camx + 5, camy + 95, 0, "mouse y: %i", y);
 }
 
-void Allegro::showFps(){
+void Allegro::showFps()
+{
 
     //-------------------------------
     //  CALCULA FPS Y LAS MUESTRA
     //-------------------------------
 
     new_time = al_get_time();
-    fps = 1.0/(new_time - old_time);
+    fps = 1.0 / (new_time - old_time);
     old_time = new_time;
-    if(cont++ == 60){
+    if (cont++ == 60)
+    {
 
         last_fps = fps;
         cont = 0;
     }
-    al_draw_textf(keepcalm12,al_map_rgb(250,250,250),camx+5,camy+5,0,"fps: %i",(int)last_fps);
+    al_draw_textf(keepcalm12, al_map_rgb(250, 250, 250), camx + 5, camy + 5, 0, "fps: %i", (int)last_fps);
 }
 
 ///*********************************************
 ///*                 EXTRAS
 ///*********************************************
 
-
-void cameraUpdate(float x, float y, int w, int h){
+void cameraUpdate(float x, float y, int w, int h)
+{
 
     //-------------------------------
     //  MUEVE LA CAMARA
     //  RECIBE COORDENADAS
     //-------------------------------
 
-    camx = -(ANCHO/2) + (x + w/2);
-    camy = -(ALTO/2) + (y + h/2);
+    camx = -(ANCHO / 2) + (x + w / 2);
+    camy = -(ALTO / 2) + (y + h / 2);
 
     //-------------------------------
     //  COLISIONES
     //-------------------------------
 
-    if(camx < 0)
+    if (camx < 0)
         camx = 0;
 
-    if(camy < 0)
+    if (camy < 0)
         camy = 0;
 
-    if(camx + ANCHO > ANCHO_MAPA)
+    if (camx + ANCHO > ANCHO_MAPA)
         camx = ANCHO_MAPA - ANCHO;
 
-    if(camy + ALTO > ALTO_MAPA)
+    if (camy + ALTO > ALTO_MAPA)
         camy = ALTO_MAPA - ALTO;
 }
 

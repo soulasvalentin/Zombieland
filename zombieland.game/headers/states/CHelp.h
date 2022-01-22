@@ -13,12 +13,17 @@
 
 */
 
-class CHelp:public CMenu{
+class CHelp : public CMenu
+{
 
 private:
-
-    enum{NONE,TECLAS,OBJETIVO};
-    int state;  // Opcion seleccionada
+    enum
+    {
+        NONE,
+        TECLAS,
+        OBJETIVO
+    };
+    int state; // Opcion seleccionada
     ALLEGRO_BITMAP *bmp_teclas = NULL;
     ALLEGRO_BITMAP *bmp_objetivo = NULL;
 
@@ -27,7 +32,8 @@ public:
     void render_help();
     void destroy_bitmaps();
 
-    CHelp():CMenu("TECLAS","OBJETIVO","VOLVER"){
+    CHelp() : CMenu("TECLAS", "OBJETIVO", "VOLVER")
+    {
         state = 0;
         bmp_teclas = al_load_bitmap("resources/menus/help/help.png");
         bmp_objetivo = al_load_bitmap("resources/menus/help/objetivo.png");
@@ -35,7 +41,7 @@ public:
 };
 
 //--------------------------------------------
-//  VARIABLE QUE IDENTIFICA DE QUE MENÚ VIENE
+//  VARIABLE QUE IDENTIFICA DE QUE MENï¿½ VIENE
 //--------------------------------------------
 
 int source = 0;
@@ -44,40 +50,50 @@ int source = 0;
 ///*              OPEN HELP
 ///*********************************************
 
-void CHelp::open_help(){
+void CHelp::open_help()
+{
 
     //-------------------------------
     //  LEER IMPUTS
     //-------------------------------
 
-    switch(read_imput()){
+    switch (read_imput())
+    {
 
-        case BACK:  if(state == NONE){
-                        if(source == MAINMENU)
-                            GameState.changeState(MAINMENU);
-                        else
-                            GameState.changeState(INGAMEMENU);
-                    }
-                    else
-                        state = NONE;
-                    break;
+    case BACK:
+        if (state == NONE)
+        {
+            if (source == MAINMENU)
+                GameState.changeState(MAINMENU);
+            else
+                GameState.changeState(INGAMEMENU);
+        }
+        else
+            state = NONE;
+        break;
 
-        case SELECT:
+    case SELECT:
 
-            //---------------------------------------
-            //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
-            //---------------------------------------
+        //---------------------------------------
+        //  CAMBIAR DE ESTADO SEGUN 'SELECTION'
+        //---------------------------------------
 
-            switch(selection){
-                case 0: state = TECLAS;     break;
-                case 1: state = OBJETIVO;   break;
-                case 2: if(source == MAINMENU)
-                            GameState.changeState(MAINMENU);
-                        else
-                            GameState.changeState(INGAMEMENU);
-                        break;
-            }
+        switch (selection)
+        {
+        case 0:
+            state = TECLAS;
             break;
+        case 1:
+            state = OBJETIVO;
+            break;
+        case 2:
+            if (source == MAINMENU)
+                GameState.changeState(MAINMENU);
+            else
+                GameState.changeState(INGAMEMENU);
+            break;
+        }
+        break;
     }
 }
 
@@ -85,16 +101,18 @@ void CHelp::open_help(){
 ///*              RENDER HELP
 ///*********************************************
 
-void CHelp::render_help(){
+void CHelp::render_help()
+{
 
     //-----------------------------------------
     //  DIBUJA EL SUB ESTADO CORRESPONDIENTES
     //-----------------------------------------
 
-    if(state == 0){
+    if (state == 0)
+    {
 
         //-------------------------------
-        //  MOSTRAR SELECCIÓN
+        //  MOSTRAR SELECCIï¿½N
         //-------------------------------
 
         render_selection();
@@ -104,16 +122,18 @@ void CHelp::render_help(){
         //-------------------------------
 
         render_options();
-
-    } else if(state == 1){
+    }
+    else if (state == 1)
+    {
 
         // Informacion de las teclas
-        al_draw_bitmap(bmp_teclas,ANCHO/2-al_get_bitmap_width(bmp_teclas)/2+camx,ALTO/2-al_get_bitmap_height(bmp_teclas)/2+camy,0);
+        al_draw_bitmap(bmp_teclas, ANCHO / 2 - al_get_bitmap_width(bmp_teclas) / 2 + camx, ALTO / 2 - al_get_bitmap_height(bmp_teclas) / 2 + camy, 0);
+    }
+    else if (state == 2)
+    {
 
-    } else if(state == 2){
-
-        // Información del objetivo
-        al_draw_bitmap(bmp_objetivo,ANCHO/2-al_get_bitmap_width(bmp_teclas)/2+camx,ALTO/2-al_get_bitmap_height(bmp_teclas)/2+camy,0);
+        // Informaciï¿½n del objetivo
+        al_draw_bitmap(bmp_objetivo, ANCHO / 2 - al_get_bitmap_width(bmp_teclas) / 2 + camx, ALTO / 2 - al_get_bitmap_height(bmp_teclas) / 2 + camy, 0);
     }
 }
 
@@ -121,7 +141,8 @@ void CHelp::render_help(){
 //  DESTRUIR BITMAPS
 //-------------------------------
 
-void CHelp::destroy_bitmaps(){
+void CHelp::destroy_bitmaps()
+{
 
     al_destroy_bitmap(bmp_teclas);
 }
